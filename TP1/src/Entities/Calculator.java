@@ -11,18 +11,19 @@ import java.math.RoundingMode;
 
 public class Calculator {
 
+    // Calcula Xi, Xi+1 y Calcula el Random
     public static String[][] calculate(Datos datos, int loops) {
         String[][] seeds = new String[loops][3];
         for (int i = 0; i < loops; i++) 
         {
             //0 : Xi
             seeds[i][0] = String.valueOf(datos.getSeed());
-            int Xi = datos.getSeed();
+            //Guardo el Registro Anterior.
             datos.setSeed(((datos.getA() * datos.getSeed()) + datos.getC()) % datos.getM());
             //1 : Xi+1
             seeds[i][1] = String.valueOf(datos.getSeed());
-            BigDecimal div = BigDecimal.valueOf(Xi).divide(BigDecimal.valueOf(datos.getM()), MathContext.DECIMAL64);
             //2 : Num Aleat (entre 0 y 1)
+            BigDecimal div = BigDecimal.valueOf(datos.getSeed()).divide(BigDecimal.valueOf(datos.getM()), MathContext.DECIMAL64);
             seeds[i][2] = String.valueOf(formatRandomNumber(div.doubleValue()));
         }
         return seeds;

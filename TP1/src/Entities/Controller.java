@@ -96,7 +96,8 @@ public class Controller {
     }
 
     /**
-     *
+     * Calcula la Matriz de Frecuencias para test chi-cuadrado.
+     * 
      * @param randomVec
      * @param intervalo 5, 10 o 20
      * @return
@@ -104,7 +105,7 @@ public class Controller {
     public int[][] matrizFrecuencia(ArrayList<BigDecimal> randomVec, int intervalo) {
         int[][] matrizFrecuencia = new int[intervalo][2];
 
-            BigDecimal rango = BigDecimal.ONE.divide(BigDecimal.valueOf(intervalo));
+        BigDecimal rango = BigDecimal.ONE.divide(BigDecimal.valueOf(intervalo), MathContext.DECIMAL64);
         BigDecimal comparador;
 
         for (int i = 0; i < randomVec.size(); i++) {
