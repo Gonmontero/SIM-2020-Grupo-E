@@ -31,16 +31,16 @@ public class GeneradorCongruencial extends javax.swing.JFrame
         contador = response.length;
         
         this.response = response;
+        //Seteo Valores de Interfaz Grafica y eventos.
         setTitle("Resultados metodo " + metodo);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         initComponents();
         
         crearTablaNumerosAleatorios();
-        
         crearTablaChiCuadrado();
-        
         agregarListeners();
         
+        //Cargo Valores en la Grilla.
         setTexts(valoresDelMetodo);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -240,12 +240,8 @@ public class GeneradorCongruencial extends javax.swing.JFrame
     }//GEN-LAST:event__btnSiguienteActionPerformed
 
     private void _btnChiCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__btnChiCuadradoActionPerformed
-        //        new TestTable(controller,
-            //                        controller.matrizFrecuencia(vecRandom,Integer.parseInt((String)jComboBox1.getSelectedItem())),
-            //                        vecRandom,
-            //                        controller.getRango(Integer.parseInt((String)jComboBox1.getSelectedItem())),
-            //                        Integer.parseInt((String)jComboBox1.getSelectedItem())).setVisible(true);
-        
+
+        // Tomo valores y genero tabla de Matriz de Frecuencia para Test Chi-Cuadrado.
         int cantIntervalos = Integer.parseInt((String) _cboIntervalos.getSelectedItem());
         int cantNumeros = _tmNumerosAleatorios.getRowCount();
         if (cantNumeros >= cantIntervalos) {
@@ -295,9 +291,6 @@ public class GeneradorCongruencial extends javax.swing.JFrame
             "Estadistico"
         };
         _tmChiCuadrado = new ChiCuadradoTableModel(colNames, 0);
-//        _tblChiCuadrado.setModel(_tmChiCuadrado);
-//        _tblChiCuadrado.setEnabled(false);
-//        _scpChiCuadrado.setEnabled(false);
         _tmChiCuadrado.setAllDisabled();
     }
 

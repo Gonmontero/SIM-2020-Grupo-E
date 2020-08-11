@@ -61,10 +61,10 @@ public class Main extends javax.swing.JFrame {
         jLabel10.setText("57394");
 
         jLabel6.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
-        jLabel6.setText("57394");
+        jLabel6.setText("77474");
 
         jLabel4.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
-        jLabel4.setText("57394");
+        jLabel4.setText("63327");
 
         jLabel3.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
         jLabel3.setText("Demarchi, Leandro ");
@@ -76,7 +76,7 @@ public class Main extends javax.swing.JFrame {
         jLabel7.setText("Montero, Gonzalo");
 
         jLabel11.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
-        jLabel11.setText("57394");
+        jLabel11.setText("56070");
 
         jLabel1.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
         jLabel1.setText("Seleccione una opción:");
@@ -117,7 +117,7 @@ public class Main extends javax.swing.JFrame {
         jLabel12.setText("Rizzi, Juan Matias");
 
         jLabel13.setFont(new java.awt.Font("Thonburi", 0, 13)); // NOI18N
-        jLabel13.setText("57394");
+        jLabel13.setText("47732");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
